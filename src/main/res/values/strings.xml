@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ViewsApplication</string>
+    <string name="tweeter_key" translatable="false">uG0NN9yUSGyPqBxddZ3MOmef5</string>
+    <string name="tweeter_secret" translatable="false">maI7Sv811LRE4q7wwcOtgMAKktdqdlpWaZ8SklYtHJLV5IoZos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="appli_name">SimpleTweetApp</string>
+    <string name="login_label">Connect to Twitter</string>
+    <string name="intent_scheme">oauth</string>
+    <string name="intent_host">cpsimpletweets</string>
+    <string name="title_activity_timeline">Home Timeline</string>
+    <string name="placeholder">What\'s Happening?</string>
+    <string name="btnSendTweet">Send Tweet</string>
+    <string name="maxChar">Cannot Exceed 140 Characters</string>
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlUserProfile"
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/ivUserProfileBGImg"
+                style="@style/BackGroundImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ivUserProfileImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ivUserProfileBGImg"
+                android:layout_alignStart="@+id/ivUserProfileBGImg"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:minHeight="90dp"
+                android:minWidth="90dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_profile" />
+
+            <TextView
+                android:id="@+id/txtUserScreenName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ivUserProfileImg"
+                android:layout_toRightOf="@+id/ivUserProfileImg"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:text="Bill"
+                android:textColor="#ff550416"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtUserTagLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtUserScreenName"
+                android:layout_toRightOf="@+id/ivUserProfileImg"
+                android:autoLink="all"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:linksClickable="true"
+                android:maxLines="4"
+                android:paddingLeft="20dp"
+                android:text="Tweets From..."
+                android:textAlignment="gravity"
+                android:textColor="#ff1b1350"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/rlUserProfile"
+            android:background="@drawable/border_bottom"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/ivUserTweetCount"
+                android:layout_weight=".34"
+                android:background="@drawable/border_layout">
+
+                <TextView
+                    android:id="@+id/txtTweetCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:minHeight="20dp"
+                    android:text="0"
+                    android:textAlignment="gravity"
+                    android:textColor="#6ce7c2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtTweetCountLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/txtTweetCount"
+                    android:gravity="center_vertical|left"
+                    android:text="TWEETS"
+                    android:textAlignment="gravity"
+                    android:textColor="#3de4b2"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/ivUserTweetCount"
+                android:layout_weight=".28"
+                android:background="@drawable/border_layout"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/txtFollowingCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:minHeight="20dp"
+                    android:text="0"
+                    android:textAlignment="gravity"
+                    android:textColor="#6ce7c2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtFollowingCountLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/txtFollowingCount"
+                    android:gravity="center_vertical|left"
+                    android:text="FOLLOWING"
+                    android:textAlignment="gravity"
+                    android:textColor="#3de4b2"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/ivUserTweetCount"
+                android:layout_weight=".30"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/txtFollowersCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:minHeight="20dp"
+                    android:text="0"
+                    android:textAlignment="gravity"
+                    android:textColor="#6ce7c2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtFollowersLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/txtFollowersCount"
+                    android:gravity="center_vertical|left"
+                    android:text="FOLLOWERS"
+                    android:textAlignment="gravity"
+                    android:textColor="#3de4b2"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/root_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"></FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
